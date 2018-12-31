@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:700|Sarabun');
+*{
+    margin: 0;
+    padding: 0
+}
+body {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+    /* overflow: hidden; */
+}
+.page{
+    height: 100vh;
+    width: 100%;
+}
+.landing{
+    display: grid;
+    background: url('../landing2.png');
+    background-attachment: fixed;
+    background-size: cover;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr
+}
+#pccoe-logo-img {
+    height: 4.2em; 
+    position: relative;
+    left: 0.5em;
+    top: 0.5em;
+    transition: 0.2s ease
+}
+#pccoe-logo-img:hover{
+    transform: scale(1.2)
+}
+.spectrum-landing{
+    transform: translateY(-1em);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    text-shadow: 6px 9px 20px #000000a6;
+    align-self: start;
+    color: white
+}
+.h-pccoe{
+    font-family: 'Sarabun', sans-serif;
+        font-size: 1.5em;
+    align-self: end;
+    justify-self: center;
+}
+.h-spectrum{
+  font-family: 'Asap', sans-serif; 
+    font-size: 6em;
+    text-align: center;
+}
+.letter{
+    display: inline-block;
+    transition: 0.1s ease
+}
+.letter:hover{
+    transform: scale(1.2);
+}
+.h-intro{
+    font-family: 'Asap', sans-serif;
+    font-size: 1.2em;
+    text-align: center
+}
+.down-arrow{
+    display: flex;
+    justify-content: center;
+   
+}
+.down-arrow img{
+    height: 4.5em;
+     transition: 0.2s ease;
+     /* transform: rotate(180deg) */
+}
+.down-arrow img:hover{
+        filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+        transform: scale(1.2);
+
+}
+
+/* page-1 over */
+
+.events{
+    /* display: grid;
+    grid-template-rows: 1fr 4fr; */
+    background: #212121
+}
+.events-head{
+    position: relative;
+    top:0.2em;
+    font-size: 5em;
+    color: #FFE0B2;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    margin-bottom: 8vh;
+      text-shadow: 6px 9px 20px #000000a6;
+}
+.swiper-container {
+    justify-self: center;
+      width: 100%;
+ 
+    }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 20em;
+    height: 70vh;
+    border-radius: 1em     
+    }
+.event-heading{
+     font-family: 'Sarabun', sans-serif;
+    font-size:2.5em;
+    color: black;
+    font-weight: 700;
+    text-align: center ;
+     text-shadow: 6px 9px 20px #00000061;;
+}
+.event-content{
+    font-family: 'Sarabun', sans-serif;
+    font-size:1.5em;
+    font-weight: 700;
+    text-align: center ;
+    border-radius: 0.5em;
+    transform: translateY(0.1em);
+    background: linear-gradient(0deg,#d1e6d5,transparent)
+}
+.button{
+       width: 5em;
+       color: white;
+    text-align: center;
+    margin-top: 2vh;
+    margin-left: 30%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,0,0,1) 0%, rgba(64,64,64,1) 90.2% );;
+    height: 5.2vh
+}
+#brain-dasher {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain;       
+   
+}
+#paper-persentation{
+     display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/paper-presentation.jpg');
+       background-position-x: -125px;
+       background-size: cover; 
+}
+/* #paper-persentation .event-heading{
+    color: white
+}
+#paper-persentation .event-content{
+    color: white;  
+    background: linear-gradient(0deg,#070707,transparent)
+} */
+#c-coder {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/C-language.jpeg');
+       background-size: cover; 
+       background-position-x: -150px;      
+   
+}
+#c-coder .event-heading{
+    color: white
+}
+#c-coder .event-content{
+    color: white
+}
+
+/* media queries */
+@media only screen and (max-width: 780px) {
+    .landing{
+         grid-template-columns: 1fr 10fr 1fr;
+    }
+    .spectrum-landing{
+        font-size: 0.52em
+    }
+    #pccoe-logo-img {
+    height: 2.8em;
+    position: relative;
+    left: 1.5em;
+    top: 1.5em;
+    }
+    .down-arrow img{
+    height: 4.5em;
+    }
+
+    /* page-2 */
+    .events-head{
+        font-size: 4em
+    }
+
+}
