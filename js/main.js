@@ -15,11 +15,18 @@ var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 'auto',
+    slidesPerView: "3",
+    keyboard: {
+        enabled: true,
+      },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
     coverflowEffect: {
-        rotate: 50,
+        rotate: 45,
         stretch: 0,
-        depth: 100,
+        depth: 200,
         modifier: 1,
         slideShadows: true,
     },

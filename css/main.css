@@ -170,6 +170,65 @@ body {
     color: white
 }
 
+#catapult {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain;       
+   
+}
+
+#treasure {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain;       
+   
+}
+
+#short-movie {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain;       
+   
+}
+
+#model-making {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain;       
+   
+}
+
+#robo-soccer {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain;       
+   
+}
+
+#electrica {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain;       
+   
+}
+
+#aero-modelling{
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+       background: url('../images/brain-dasher.jpg');
+       background-size: contain; 
+}
+
+.event-content > .button{
+  cursor: context-menu;
+}
+
 /* media queries */
 @media only screen and (max-width: 780px) {
     .landing{
