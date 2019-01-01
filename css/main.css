@@ -106,15 +106,17 @@ body {
     background-size: cover;
     width: 20em;
     height: 70vh;
-    border-radius: 1em     
+    border-radius: 1em    ;   
     }
+
 .event-heading{
      font-family: 'Sarabun', sans-serif;
     font-size:2.5em;
     color: black;
     font-weight: 700;
     text-align: center ;
-     text-shadow: 6px 9px 20px #00000061;;
+     text-shadow: 6px 9px 20px #00000061;
+      transition: all 0.5s ease
 }
 .event-content{
     font-family: 'Sarabun', sans-serif;
@@ -123,7 +125,11 @@ body {
     text-align: center ;
     border-radius: 0.5em;
     transform: translateY(0.1em);
-    background: linear-gradient(0deg,#d1e6d5,transparent)
+    background: linear-gradient(0deg,#d1e6d5,transparent);
+    transition: all 0.5s ease
+}
+.event-heading:hover{
+    transform:  scale(0.95)
 }
 .button{
        width: 5em;
@@ -138,14 +144,15 @@ body {
       display: grid;
       grid-template-rows: 2fr 1fr;
        background: url('../images/brain-dasher.jpg');
-       background-size: contain;       
-   
+       background-size: contain;      
+
 }
+
 #paper-persentation{
      display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/paper-presentation.jpg');
-       background-position-x: -125px;
+       background: url('../images/research-paper-presentation.png');
+       background-position-x: 375px;
        background-size: cover; 
 }
 /* #paper-persentation .event-heading{
@@ -169,66 +176,107 @@ body {
 #c-coder .event-content{
     color: white
 }
-
 #catapult {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/brain-dasher.jpg');
-       background-size: contain;       
+       background: url('../images/catapult.jpg');
+       background-size: cover; 
+       background-position-x: -62px;      
    
 }
-
+#catapult .event-heading{
+    color: black
+}
+#catapult .event-content{
+    color: black
+}
 #treasure {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/brain-dasher.jpg');
-       background-size: contain;       
+       background: url('../images/treasure-hunt.jpg');
+       background-size: cover; 
+       background-position-x: -201px;      
    
 }
-
+#treasure .event-heading{
+    color: black
+}
+#treasure .event-content{
+    color: black
+}
 #short-movie {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/brain-dasher.jpg');
-       background-size: contain;       
+       background: url('../images/movie\ making.jpg');
+       background-size: cover; 
+       background-position-x: 0px;      
    
 }
-
+#short-movie .event-heading{
+    color: white
+}
+#short-movie .event-content{
+    color: white
+}
 #model-making {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/brain-dasher.jpg');
-       background-size: contain;       
+       background: url('../images/model-making.jpg');
+       background-size: cover; 
+       background-position-x: -201px;      
    
 }
-
+#model-making .event-heading{
+    color: white
+}
+#model-making .event-content{
+    color: black
+}
 #robo-soccer {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/brain-dasher.jpg');
-       background-size: contain;       
+       background: url('../images/roboscorcer.jpg');
+       background-size: cover; 
+       background-position-x: -155px;      
    
 }
-
+#robo-soccer .event-heading{
+    color: black
+}
+#robo-soccer .event-content{
+    color: black
+}
 #electrica {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/brain-dasher.jpg');
-       background-size: contain;       
+       background: url('../images/electrica.jpeg');
+       background-size: cover; 
+       background-position-x: -318px;      
    
 }
-
-#aero-modelling{
+#electrica .event-heading{
+    color: white
+}
+#electrica .event-content{
+    color: white;
+   
+    background: linear-gradient(0deg,#070707,transparent)
+}
+#aero-modelling {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/brain-dasher.jpg');
-       background-size: contain; 
+       background: url('../images/aero-modelling.jpg');
+       background-size: cover; 
+       background-position-x: -189px;      
+   
 }
-
-.event-content > .button{
-  cursor: context-menu;
+#aero-modelling .event-heading{
+    color: black
 }
-
+#aero-modelling .event-content{
+    color: black;
+   
+}
 /* media queries */
 @media only screen and (max-width: 780px) {
     .landing{
@@ -249,7 +297,9 @@ body {
 
     /* page-2 */
     .events-head{
-        font-size: 4em
+        margin-bottom: 12vh;
+        padding-top: 2vh;
+        font-size: 2.5em
     }
 
 }
