@@ -14,7 +14,7 @@
   top: 50vh;
   left:50%;
   width: 64px;
-  transform: scale(1.5);
+  transform: translate(-50%) scale(1.1);
   height: 64px;
 }
 .lds-ellipsis div {
