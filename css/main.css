@@ -16,7 +16,7 @@ body {
 }
 .landing{
     display: grid;
-    background: url('../landing2.png');
+    background: url('../images/landing2.jpg');
     background-attachment: fixed;
     background-size: cover;
     grid-template-rows: 1fr 2fr 1fr;
@@ -28,6 +28,18 @@ body {
     left: 0.5em;
     top: 0.5em;
     transition: 0.2s ease
+}
+#spectrum-logo{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    height: 4em;
+    display: none;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+    transition: 0.2s
+}
+#spectrum-logo:hover{
+    transform: scale(1.1)
 }
 #pccoe-logo-img:hover{
     transform: scale(1.2)
@@ -79,7 +91,7 @@ body {
 
 }
 
-/* page-1 over */
+/* landing over */
 
 .events{
     /* display: grid;
@@ -277,6 +289,39 @@ body {
     color: black;
    
 }
+
+/* events over */
+
+.about-us{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    background-attachment: fixed;
+   background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    font-weight: 600
+}
+
+.about-us-head{
+    font-size: 4.5em;
+     font-family: 'Sarabun', sans-serif;
+     align-self: center;
+     justify-self: center;
+  
+
+}
+.about-us-content{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Sarabun', sans-serif;
+     align-self: center;
+     justify-self: center;  
+
+}
+
+
+
+
 /* media queries */
 @media only screen and (max-width: 780px) {
     .landing{
@@ -291,15 +336,34 @@ body {
     left: 1.5em;
     top: 1.5em;
     }
+    #spectrum-logo{
+        height: 3em;
+    }
     .down-arrow img{
     height: 4.5em;
     }
 
-    /* page-2 */
+    /* events */
     .events-head{
         margin-bottom: 12vh;
         padding-top: 2vh;
         font-size: 2.5em
+    }
+
+    /* about-us */
+
+    .about-us{
+        grid-template-columns: none;
+        grid-template-rows: 0.5fr 2fr;
+        font-size: 0.6em;     
+    }
+    .about-us-head{
+        align-self: end
+    }
+    .about-us-content{
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 2.1em
     }
 
 }

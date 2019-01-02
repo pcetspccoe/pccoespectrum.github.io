@@ -5,7 +5,7 @@ const scroll1=()=>{
         $('#ba1').css('transform', 'rotate(0deg)')
     }, 900);
     $('html, body').animate({
-        scrollTop: $(".events").offset().top
+        scrollTop: $(".about-us").offset().top
     }, 1200);
 }
 
@@ -26,4 +26,14 @@ var swiper = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',
     },
+});
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if(scroll>663)
+    {
+        $('#spectrum-logo').fadeIn('100')
+    }
+    else{
+        $('#spectrum-logo').fadeOut('100')
+    }
 });
