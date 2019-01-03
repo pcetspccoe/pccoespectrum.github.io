@@ -1,6 +1,6 @@
 # spectrum.new
 ***
-#A website for Spectrum 2019, a College Fest of Pimpri Chinchwad College Engineering, Nigdi
+##A website for Spectrum 2019, a College Fest of Pimpri Chinchwad College Engineering, Nigdi
 
 Since last 11 years, PCCOE SPECTRUM has been a major state level event for first year students. The thing that makes
 SPECTRUM really special is the fact that the entire event is managed, created and participated in by EXCLUSIVELY first
