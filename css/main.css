@@ -118,7 +118,7 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     background-attachment: fixed;
-    background-image: url('/images/about-us.jpeg');
+    background-image: url('../images/about-us.jpeg');
     background-position: cover;
    /* background-color: #4158D0;
   background-image: -webkit-linear-gradient(313deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
