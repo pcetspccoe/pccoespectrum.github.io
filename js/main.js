@@ -30,10 +30,14 @@ var swiper = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',
     },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
 });
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    if(scroll>663)
+    if(scroll>600)
     {
         $('#spectrum-logo').fadeIn('100')
     }
@@ -264,3 +268,4 @@ $('#aero-modelling-card').click(()=>{
     })
 })
 
+// clock
