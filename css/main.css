@@ -402,7 +402,7 @@ body {
          grid-template-columns: 1fr 10fr 1fr;
     }
     .dock{
-        display: grid;
+        display: none;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         position: fixed;
         top: 30vh;
