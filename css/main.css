@@ -58,7 +58,7 @@ body {
     transition: 0.2s
 }
 #spectrum-logo:hover{
-    transform: scale(1.1)
+    transform: scale(1.2)
 }
 #pccoe-logo-img:hover{
     transform: scale(1.2)
@@ -384,16 +384,18 @@ body {
     display: grid;
     grid-template-rows:1fr 9fr 1fr;
     grid-template-columns: 1fr 9fr 1fr;
-
-}
-.more-links{
-    display: grid;
-    grid-template-rows: 1fr 3fr 2fr
 }
 
+.animate-logo{
+    top: 20% !important;
+    left: 30% !important;
+    transform: scale(2);
+    transition: 1s !important;
+}
 
-
-
+.no-hover{
+    pointer-events: none !important;
+}
 
 
 /* media queries */

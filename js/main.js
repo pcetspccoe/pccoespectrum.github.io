@@ -9,6 +9,20 @@ const scroll1=()=>{
     }, 1200);
 }
 
+/* Logo animation in more-links-div */
+
+$(window).on( 'scroll', function(){
+    let moreLinksPosition = $('#more-links-logo').offset().top - $(window).scrollTop();
+    if(moreLinksPosition <= 0){
+        $('#spectrum-logo').addClass("animate-logo");
+        $('#spectrum-logo').addClass("no-hover");
+    }
+    if(moreLinksPosition > 0){
+        $('#spectrum-logo').removeClass("animate-logo");
+        $('#spectrum-logo').removeClass("no-hover");
+    }
+ });
+
 /*******event-swiper*******/
 
 var swiper = new Swiper('.swiper-container', {
