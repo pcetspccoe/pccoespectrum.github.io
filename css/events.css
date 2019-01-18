@@ -1,94 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 html, body {
-    position: relative;
-    height: 100%;
-  }
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
-    margin: 0;
-    padding: 0;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 100vh;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .page{
-      display: grid;
-      grid-template-columns: 1fr 1.8fr;
-      
-  }
-  #brain-image{
-    filter: drop-shadow(8px 8px 10px grey);
-    justify-self: center;
-    transition: all 0.2s
-  }
-  #brain-image:hover{
-    transform: scale(1.05)
-  }
-  .content{
-      display: grid;
-      grid-template-rows: 0.5fr 3fr 0.5fr ;
-      height: 90%;
+	position: relative;
+	height: 100%;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#000;
+	margin: 0;
+	padding: 0;
+	
+}
+.background {
+	position:absolute;
+	display:block;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.swiper-container {
+	width: 100%;
+	height: 100vh;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
 
+.page{
+	display: grid;
+	font-family: 'Noto Sans JP', sans-serif;
+	grid-template-columns: 1fr 1.8fr;
+}
+#brain-dasher{
 
-  }
+	background: url('../images/barin-bg.jpg');
+	background-size: cover;
+	color: white
+}
+.image{
+	z-index: 3;
+}
+#brain-image{
+	height: 20rem;
+	justify-self: center;
+	transition: all 0.2s
+}
+#brain-image:hover{
+	transform: scale(1.05);
+	filter:drop-shadow(8px 8px 5px rgba(0,0,0,0.2));
+}
+.content{
+	display: grid;
+	grid-template-rows: 0.5fr 3fr 0.5fr ;
+	height: 90%;
+	z-index: 3;
+}
 .brain-title{
-  display: inline-flex;
-  text-align: center;
-  font-size: 4em;
-  justify-self: center;
-  text-shadow: 6px 4px 12px #0000004a;
+	display: inline-flex;
+	text-align: center;
+	font-size: 4em;
+	justify-self: center;
+	text-shadow: 6px 4px 12px #0000004a;
+	
 }
 .letter{
-  transition: all 0.1s
+	transition: all 0.1s
 }
 .letter:hover{
-  transform: scale(1.1)
+	transform: scale(1.1);
+	color: #007aff
 }
 .guide{
-  background: #007aff45;
+	font-size: 1.4em;
+	padding-left:3%;
+	padding-right: 3%;
+	align-self: center
 }
+.guide ul{
+	text-align: left
+}
+.brain-button{
+	justify-self: center;
+	align-self: flex-start
+}
+
+/* buttons */
+p {
+	margin-bottom: 0.5em;
+  }
+  
+  a,
+  a:visited {
+	text-decoration: none;
+	color: #00AE68;
+  }
+  a.button {
+	display: block;
+	position: relative;
+	float: left;
+	width: 120px;
+	padding: 0;
+	margin: 10px 20px 10px 0;
+	font-weight: 600;
+	text-align: center;
+	line-height: 50px;
+	color: #FFF;
+	border-radius: 5px;
+	transition: all 0.1s ;
+  }
+  .btnLightBlue {
+	background: rgb(0, 0, 0);
+	transform: translateY(-1em);
+  }
+  .btnLightBlue.btnPush {
+	box-shadow: 0px 5px 0px 0px #1E8185;
+  }
+  .btnPush:hover {
+	margin-top: 15px;
+	margin-bottom: 5px;
+  }
+  .btnLightBlue.btnPush:hover {
+	box-shadow: 0px 0px 0px 0px #1E8185;
+  }
+/* paper presenataion */
+#paper-persentation{
+	background: url('../images/paper-presenation.jpg');
+	background-size: cover
+}
+
+.paper-title{
+	display: inline-flex;
+	font-size: 3em;
+	justify-self: center
+}
+.paper-button{
+	justify-self: center;
+	align-self: flex-start
+}
+/* ccoder */
+#ccoder{
+	background: url('../images/c-bg.jpg');
+	background-size: cover;
+	color: black
+}
+.c-title{
+	display: inline-flex;
+	font-size: 4em;
+	justify-self: center
+}
+#ccoder .content{
+	font-size: 0.8em;
+}
+#ccoder .content ol{
+	text-align: left
+}
+/* catapult */
+#catapult{
+	background: url('../images/catapult-bg.png');
+	background-size: cover
+}
+.cat-title b{
+	font-size: 3em;
+	transition: all 0.2s 
+}
+#catapult .content{
+	font-size: 0.8em;
+}
+/* model */
+#model{
+	background: url('../images/model-bg.jpg');
+	background-size: cover
+}
+#model .content{
+	font-size: 0.8em;
+}
+/* tth */
+#tth{
+	background: url('../images/tth=bg.jpg');
+	background-size: cover
+
+}
+.tth-title{
+	font-size: 3.2em
+}
+#tth .content{
+	font-size: 1.1em
+}
+
+/* autocad */
+#autocad{
+	background: url('../images/autocad-bg.jpg');
+	background-size: cover
+}
+.autocad-title{
+	font-size: 4em;
+}
+.page .content ol{
+	text-align: left
+}
+#autocad .content{
+	font-size: 0.85em;
+}
+/* robo */
+#robo{
+	background: url('../images/robo-bg.jpg');
+	background-size: cover;
+	grid-template-columns: 1fr 1.2fr
+}
+#robo .content{
+	font-size: 0.85em;
+	color: white
+}
+.robo-title{
+	font-size: 4em;
+}
+#robo .content ol{
+	text-align: left
+}
+/* electrica */
+#electrica{
+	color: white;
+	background: url('../images/electrica-bg.jpg');
+	background-size: cover;
+
+}
+#electrica .content{
+	font-size: 0.85em;
+	color: white
+}
+/* smm */
+#smm{
+	color: black;
+	background: #fec316;
+	background-size: cover;
+	background-position: 61em;
+}
+
+
+
+
+
+
 
 
 
 
 /* media queries */
+@media only screen and (max-width: 780px) {
 
-
-@media only screen and (max-width: 600px) {
-  .page{
-    grid-template-columns: none;
-    grid-template-rows: 1fr 3fr
-  }
-  #brain-image{
-    filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.28));
-    height: 9em;
-  }
-  .brain-title{
-    font-size: 2em;
-
-  }
-  .swiper-pagination{
-    display: none !important
-  }
+	.page{
+	grid-template-columns: none;
+	grid-template-rows: 1fr 4fr
+}
+	#brain-image{
+	filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.28));
+	height: 8em;
+	}
+	.brain-title{
+	font-size: 3em;
+	align-self: flex-end
+	}
+	.guide{
+		padding-left:6%;
+		padding-right: 6%
+	}
+	.content{
+		font-size: 1.6vh;		
+		align-self: flex-start
+	}
+	.brain-button{
+		align-self: flex-start
+	}
+	#ccoder .content{
+		font-size: 1.3vh;
+	}
+	#model .content{
+		font-size: 1.3vh;
+	}
+	#catapult .content{
+		font-size: 1.3vh;
+	}
+	#tth .content{
+		font-size: 1.7vh
+	}
+	#autocad .content{
+		font-size: 1.25vh
+	}
+	#robo{
+		grid-template-columns: none;
+		grid-template-rows: 1fr 4fr;
+	}
+	#robo .content{
+		font-size: 1.4vh
+	}
+	#elecrtica{
+		background-position: 39em
+	}
+	#electrica .content{
+		font-size: 1.25vh
+	}
+	#smm .content{
+		font-size: 1.35vh;
+	}
+	.swiper-pagination{
+	display: none !important
+}
 }
