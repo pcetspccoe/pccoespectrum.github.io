@@ -1,3 +1,5 @@
+/**************clickOnDownArrow**************/
+
 const scroll1=()=>{
     console.log('click')
     $('#ba1').css('transform','rotate(180deg)')
@@ -46,226 +48,27 @@ $(window).scroll(function (event) {
     }
 });
 
-/*******SWAL*******/
+/*************onePageScroll*************/
 
-$('#brain-dasher-card').click(()=>{ 
-    Swal({
-        title: 'Brain Dasher',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
 
-$('#paper-persentation-card').click(()=>{ 
-    Swal({
-        title: 'Paper Presentation',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
 
-$('#c-coder-card').click(()=>{ 
-    Swal({
-        title: 'C Coder',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-$('#catapult-card').click(()=>{ 
-    Swal({
-        title: 'Catapult',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-$('#treasure-card').click(()=>{ 
-    Swal({
-        title: 'Treasure Hunt',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-$('#short-movie-card').click(()=>{ 
-    Swal({
-        title: 'Short Movie Making',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-$('#model-making-card').click(()=>{ 
-    Swal({
-        title: 'Model Making',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-$('#robo-soccer-card').click(()=>{ 
-    Swal({
-        title: 'Robo Soccer',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-$('#electrica-card').click(()=>{ 
-    Swal({
-        title: 'Electrica',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-$('#aero-modelling-card').click(()=>{ 
-    Swal({
-        title: 'Aero Modelling',
-        text: 'Tempor dolore cupidatat pariatur incididunt in ut fugiat nostrud sint minim sunt dolore adipisicing magna est deserunt consequat do officia occaecat.',
-        type: 'info',
-        confirmButtonText: 'Register',
-        showCancelButton: 'true',
-        cancelButtonText: 'Close',
-    }).then((result) => {
-        if (result.value) {
-            var win = window.open('http://stackoverflow.com/', '_blank');
-            if (win) {
-                //Browser has allowed it to be opened
-                win.focus();
-            } else {
-                //Browser has blocked it
-                alert('Please allow popups for this website');
-            }
-        }
-    })
-})
-
-// clock
+$(".container").onepage_scroll({
+    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+    easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+    animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+    pagination: false,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+    updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+    beforeMove: function(index) {
+        $("#spectrum-logo").fadeOut();
+    },  // This option accepts a callback function. The function will be called before the page moves.
+    afterMove: function(index) {
+        $("#spectrum-logo").fadeIn();
+    },   // This option accepts a callback function. The function will be called after the page moves.
+    loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+    keyboard: true,                  // You can activate the keyboard controls
+    responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                     // the browser's width is less than 600, the fallback will kick in.
+    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+ });
