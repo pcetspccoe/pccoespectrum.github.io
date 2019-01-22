@@ -1,0 +1,111 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.conatiner{
+    position: relative;
+    width: 60vw;
+    margin: 10vh 20em;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 440px;
+    grid-gap: 40px;
+}
+.conatiner .card{
+    position: relative;
+    background: #000;
+    overflow:hidden;
+    width: 65%;
+    height: 65vh;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.conatiner .card:hover{
+    transform: translateY(-2vh);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2)
+}
+.img-box img{
+    width: 100%;
+    transform: translateY(-4vh)
+}
+.img-box{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s
+}
+.conatiner .card:hover .img-box{
+    opacity: 0.5
+}
+.conatiner .card .content{
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s
+}
+.conatiner .card:hover .content{
+    bottom: 0;
+}
+.conatiner .card:nth-child(1) .content{
+    background: linear-gradient(0deg,#ff0018,transparent)
+}
+.conatiner .card ,.content h2{
+    margin:  0 0 10px;
+    padding: 0;
+    font-size: 1.5em
+
+}
+.conatiner .card ,.content h2 span{
+    color: yellow;
+    font-size: 1em
+
+}
+.conatiner .card .content ul{
+    display: flex;
+    margin :20px 0 0 ;
+    padding: 0;
+    align-items: center;
+    justify-content: center;    
+
+}
+.conatiner .card .content ul li{
+    list-style-type: none;
+}
+.conatiner .card .content ul li a{
+    color: #fff;
+    padding: 0 10px;
+    font-size: 1.5em;
+    transition: 0.5s
+}
+.conatiner .card .content ul li a:hover{
+
+    color: yellow
+}
+ */
+.box{
+    height: 50vh;
+    width: 50vw;
+    background: green;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+}
+.circle{
+    width: 45%;
+    height: 70%;
+    background: red;
+    border-radius: 50em;
+}

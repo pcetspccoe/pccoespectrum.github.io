@@ -189,13 +189,36 @@ p {
 #catapult .content{
 	font-size: 0.8em;
 }
+
+/* contraption */
+
+#contraption{
+	color: white;
+	background: url('../images/conta-bg.jpg');
+	background-size: cover
+}
+.cat-title b{
+	font-size: 3em;
+	transition: all 0.2s 
+}
+#contraption .content{
+	font-size: 0.8em;
+}
+
+
 /* model */
 #model{
 	background: url('../images/model-bg.jpg');
 	background-size: cover
 }
 #model .content{
-	font-size: 0.8em;
+	font-size: 1em;
+}
+.model-title{
+	font-size: 3.2em
+}
+#model .content ol{
+	text-align: left
 }
 /* tth */
 #tth{
@@ -226,15 +249,20 @@ p {
 }
 /* robo */
 #robo{
+	color: black;
 	background: url('../images/robo-bg.jpg');
 	background-size: cover;
 	grid-template-columns: 1fr 1.2fr
 }
 #robo .content{
+	color: black;
 	font-size: 0.85em;
-	color: white
+}
+#robo .image img{
+	display: none;
 }
 .robo-title{
+	color: black;
 	font-size: 4em;
 }
 #robo .content ol{
@@ -300,7 +328,16 @@ p {
 	#model .content{
 		font-size: 1.3vh;
 	}
+	#robo .image img{
+		display: initial;
+	}
+	#robo{
+		background-position: -50em;
+	}
 	#catapult .content{
+		font-size: 1.3vh;
+	}
+	#contraption .content{
 		font-size: 1.3vh;
 	}
 	#tth .content{
@@ -310,6 +347,7 @@ p {
 		font-size: 1.25vh
 	}
 	#robo{
+
 		grid-template-columns: none;
 		grid-template-rows: 1fr 4fr;
 	}
