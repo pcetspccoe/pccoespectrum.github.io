@@ -515,8 +515,126 @@ footer{
     width: auto;
 }
 
+/* contact us */
+.contact_us{
+    position: relative;
+    background-color: #252626;
+    padding: 0px 0 0px 0;
+    overflow: hidden;
+    min-width: 300px; 
+    height: 85vh;
+    background-image: url(http://lorempixel.com/output/sports-q-g-300-300-5.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:right top;
+  }
+  .contact_us_fon{
+    background-color: #232424;
+    padding: 60px 0 0px 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: 0.8;
+  }
+  .contact_us_left{ 
+    display: inline-block;
+    margin: 0px 0px 0px 10%;
+    width: 40%;
+  }
+  .contact_us_big_text{
+    display: block;
+  }
+  .contact_us_big_text{
+    color: white;
+    font-size: 5vw;
+    padding: 10vh 5px 0px 5px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  .red_text{
+    background-color: red;
+    padding: 0px 10px 0px 10px;
+  }
+  .contact_us_small_text{
+    color: white;
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+    word-spacing: 5px;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  .mail:before {font-family: FontAwesome;content: "\f015";}
+  .phone_number:before {font-family: FontAwesome;content: "\f0e0";}
+  .adress:before {font-family: FontAwesome;content: "\f041 ";}
+  
+  
+  .contact_us_right{
+    display: inline-block;
+    margin: 0px 8% 0px 0;
+    width: 40%;
+    height: 50vh;
+    position: absolute;
+    top: 27vh;
+    border-left: 1px solid #808080;
+  }
+  .contact_us_icons{
+    margin: 0px 0px 0px 20px;
+  }
+  .icon{
+    background-color: white;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    line-height: 1.9;
+    color:  #252626;
+    -webkit-transition:  0.9s;
+  }
+  .icon_facebook:before {font-family: FontAwesome; content: "\f09a";}
+  .icon_twitter:before {font-family: FontAwesome; content: "\f16d ";}
+  .icon_google_plus:before {font-family: FontAwesome; content: "\f0d5";}
+  .icon_linkedin:before {font-family: FontAwesome; content: "\f0e1";}
 
-
+  .f-spectrum{
+    background-color: #232424;
+    padding: 30px 0 0 80px;
+    overflow: hidden;
+    height: 90px;
+    color: #696969;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .red_text_2{
+    padding: 0px 0 10px 0px;
+    color: red;
+  }
+  
+  
+  
+  .icon:hover { 
+   background-color: red;
+   color:  white;
+  } 
+  
+  A {
+    text-decoration: none;
+     color: red;
+  } 
+  A:hover { 
+    text-decoration: underline;
+    color: red;
+  } 
+  .info-list{
+    font-size: 2.1em;
+    padding-top: 7vh;
+    font-family: 'Fjalla One', sans-serif;
+  }
+    
+    
+   
+  
 
 
 .display-none{
@@ -524,7 +642,7 @@ footer{
 }
 
 /* media queries */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 780px) and (min-width:300px) {
     .landing{
          grid-template-columns: 1fr 10fr 1fr;
     }
@@ -577,10 +695,65 @@ footer{
         font-size: 2.1em
     }
     .map-h{
+        font-family: 'Titillium Web', sans-serif;
         font-size: 2em;
         top: 1.5em
     }
     .swiper-container{
         width: 100%;
     }
+    .contact_us_fon{
+        opacity: 0.9;
+    }
+    .contact_us{
+        min-width: 300px; 
+      }
+      .contact_us_fon{
+        padding: 30px 0 0px 0;
+      }
+      .contact_us_left{ 
+        display: block;
+        width: 100%;
+        margin: 10px 0px 0px 60px;
+      }
+      .contact_us_big_text{
+        color: white;
+        font-size: 50px;
+      } 
+      .contact_us_right{
+        display: block;
+        margin: 10px 0px 0px 40px;
+        border: none;
+        width: 100%; 
+        
+      }
+      .f-spectrum{
+        padding: 30px 0 0 1em;
+      }
+      .contact_us_right{
+        margin: 12em 0px 0px 40px;
+        border-top: 1px solid white;
+        width: 77%;
+      }
+      .contact_us_icons{
+        margin: 3vh 0px 0px 20px;
+      }
+      .contact_us_left{
+        display: block;
+        width: 100%;
+        margin: 0px 0px 0px 1em;
+        /* top: 2vh; */
+      }
+      .contact_us_small_text{
+        color: white;
+        font-size: 1em;
+        margin: 10px 1em 10px 10px;
+        /* word-spacing: 5px; */
+        font-family: 'Titillium Web', sans-serif;
+      }
+      .info-list{
+        font-size: 3.5vh;
+        padding-top: 7vh;
+        font-family: 'Fjalla One', sans-serif;
+      }
 }
