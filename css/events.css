@@ -94,7 +94,7 @@ body {
 	color: #007aff
 }
 .guide{
-	font-size: 1.4em;
+	font-size: 1.21em;
 	padding-left:3%;
 	padding-right: 3%;
 	align-self: center
@@ -188,6 +188,21 @@ p {
 }
 #catapult .content{
 	font-size: 0.8em;
+}
+
+/* aero */
+#aero{
+	color: black;
+	background: url('../images/aero-bg.jpg');
+	background-size: cover;
+	background-position-y: -24vh;
+}
+.cat-title b{
+	font-size: 3em;
+	transition: all 0.2s 
+}
+#aero .content{
+	font-size: 1em;
 }
 
 /* contraption */
@@ -335,6 +350,12 @@ p {
 		background-position: -50em;
 	}
 	#catapult .content{
+		font-size: 1.3vh;
+	}
+	#aero{
+		background-position-y: 0;
+	}
+	#aero .content{
 		font-size: 1.3vh;
 	}
 	#contraption .content{
