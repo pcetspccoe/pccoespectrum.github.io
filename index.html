@@ -19,20 +19,22 @@
 
       gtag('config', 'UA-132555422-1');
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 </head>
 
 <body>
 
-    <div class="container" >
-        <section>
+    <div class="container" id="container">
+        <section class="section fp-auto-height-responsive">
         <div class="landing page ">
 
         <!-- UNDER CONSTRUCTION BLOCK -->
-        <img src="images/under-construction_geek_man_01.png" alt="Page-Under-Construction" id="puc">
+        <!-- <img src="images/under-construction_geek_man_01.png" alt="Page-Under-Construction" id="puc"> -->
         <!-- UNDER CONSTRUCTION BLOCK -->
 
         <div class="spacer logo_img">
@@ -64,13 +66,13 @@
         </div>
         </section>
 
-        <section>
+        <section class="section">
         <div class="about-us page">
-        <div class="about-us-head">
-            About Spectrum
+        <div class="about-us-head " data-aos="fade-up" data-aos-offset="300"  data-aos-easing="ease-in-sine">
+            About <b>Spectrum</b>
 
         </div>
-        <div class="about-us-content">
+        <div class="about-us-content" data-aos="fade-left" data-aos-offset="300"  data-aos-easing="ease-in-sine">
             Since last 11 years, <strong> PCCOE SPECTRUM </strong>has been a major state level event for first year students. The thing that makes
             SPECTRUM really special is the fact that the entire event is managed, created and participated in by EXCLUSIVELY first
             year students.<br>
@@ -84,11 +86,11 @@
         </div>
         </section>
 
-        <section>
+        <section class="section">
         <div class="events page">
             
-        <div class="events-head">EVENTS</div>
-        <div class="event-slider">
+        <div class="events-head" data-aos="zoom-out-up" data-aos-offset="300">EVENTS</div>
+        <div class="event-slider" data-aos="fade-up" data-aos-offset="300"  data-aos-duration="500">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" id="brain-dasher">
@@ -219,60 +221,22 @@
         </div>
         </section>
 
-        <section>
+        <section class="section">
         <div class="map page">
-        <div class="map-h">
+        <div class="map-h" data-aos="fade-up-right">
             See You at Destination
         </div>
-        <div class="map-div">
+        <div class="map-div" data-aos="flip-right" data-aos-offset="300" data-aos-duration="1200">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15121.091704787912!2d73.7616697!3d18.6517448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b210131915734fd!2sPCCOE+-+Pimpri+Chinchwad+College+Of+Engineering!5e0!3m2!1sen!2sin!4v1547130449523" width="50%" height="100%" frameborder="0" style="border:0" allowfullscreen id="google-map"></iframe>
         </div>
         </div>
         </section> 
 
-        <!-- <section>
-        <div class="more-links-div page" id="more-links-logo">
-        <div class="mld1">
-            <img src="images/icons8-user-account-96.png" alt="Facebook" class="mldimg">
-            <p class="mldp">
-                Meet Our Teams
-            </p>
-        </div>
-        
-        <div class="mld2">
-            <img src="images/icons8-contact-96.png" alt="Facebook" class="mldimg">
-            <p class="mldp">
-                    Contact Us
-                </p>
-        </div>
-        <div class="mld3">
-            <img src="images/icons8-paper-plane-96.png" alt="Facebook" class="mldimg">
-            <p class="mldp">
-                    Send Us <br>A Feedback
-                </p>
-        </div>
-        </div>
-
-        <footer>
-            <div class="ft1">
-                
-            </div>
-            <div class="ft2">
-                <p class="ftp">
-                    &copy; Pimpri Chinchwad College of Engineering, Nigdi
-                </p>
-            </div>
-            <div class="ft3">
-                    <img src="images/icons8-facebook-96.png" alt="Facebook">
-                    <img src="images/icons8-instagram-96.png" alt="Facebook">
-            </div>
-        </footer>
-
-        </section> -->
+        <section class="section">
         <div class="page">
             <div class="contact_us">
                 <div class="contact_us_fon">
-                <div class="contact_us_left">
+                <div class="contact_us_left" data-aos="fade-right"  data-aos-offset="300"  data-aos-easing="ease-in-sine">
                   
                   <div class="contact_us_big_text">
                        <span class="contact_us_big_text">contact <span class="red_text">us</span></span>
@@ -284,9 +248,9 @@
                 </div>
                 
                 
-                <div class="contact_us_right">
+                <div class="contact_us_right" data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease-in-sine">
                   
-                  <div class="contact_us_icons">
+                  <div class="contact_us_icons" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine">
                     <a href="#"><div class="icon icon_facebook"></div></a> 
                     <a href="#"><div class="icon icon_twitter"></div></a>   
                     <div class="info-list">
@@ -303,17 +267,20 @@
                 </div>
               </div>
               
-              <div class="f-spectrum">
-                <div class="red_text_2">Spectrum 2019</span></div>
-                <div>Pimpri Chinchwad College of Engineering</div>
+              <div class="f-spectrum" >
+                <div class="red_text_2" data-aos="zoom-in" data-aos-offset="-200" data-aos-duration="1500">Spectrum 2019</span></div>
+                <div data-aos="zoom-in" data-aos-offset="-200" data-aos-duration="1500">Pimpri Chinchwad College of Engineering</div>
               </div>
         </div>
+        </section>
     </div>
 
     <img src="images/spectrum-logo.png" id="spectrum-logo">
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/main.js"></script>
 

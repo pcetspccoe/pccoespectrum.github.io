@@ -10,6 +10,8 @@ const scroll1=()=>{
         scrollTop: $(".about-us").offset().top
     }, 1200);
 }
+$("#spectrum-logo").css('display','none');
+AOS.init({ disable: 'mobile' });
 
 /*******event-swiper*******/
 
@@ -48,3 +50,12 @@ $(window).scroll(function (event) {
         $('#spectrum-logo').fadeOut('100')
     }
 });
+
+// full page .js
+// $(document).ready(function() {
+// 	$('#container').fullpage({
+// 		//options here
+// 		autoScrolling:true,
+// 		scrollHorizontally: true
+// 	});
+// });

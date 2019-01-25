@@ -21,6 +21,7 @@ body {
      -moz-user-select: -moz-none;
       -ms-user-select: none;
           user-select: none;
+          overflow-x: hidden;
     /* overflow: hidden; */;
     
 }
@@ -60,7 +61,7 @@ body {
 .landing{
     display: grid;
     background: url('../images/landing2.jpg');
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-columns: 1fr 2fr 1fr
@@ -139,11 +140,13 @@ body {
 /*About Spectrum*/
 
 .about-us{
+    color: white;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr 2.5fr;
     /* background-attachment: fixed; */
     background-image: url('../images/about-us-min.jpeg');
-    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
    /* background-color: #4158D0;
   background-image: -webkit-linear-gradient(313deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   background-image: -o-linear-gradient(313deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -154,18 +157,23 @@ body {
 .about-us-head{
     font-size: 4.5em;
      font-family: 'Sarabun', sans-serif;
-     align-self: center;
-     justify-self: center;
+     align-self: flex-end;
+     justify-self: start;
+     padding-left: 5vw; 
   
 
 }
 .about-us-content{
     font-size: 2em;
-    text-align: center;
+    text-align: left;
     font-family: 'Sarabun', sans-serif;
      align-self: center;
-     justify-self: center;  
+     justify-self: end;
+     padding: 2em  
 
+}
+.about-us-head b:hover{
+    text-decoration: underline
 }
 
 /*About Spectrum Over*/
@@ -174,7 +182,9 @@ body {
 .events{
     /* display: grid;
     grid-template-rows: 1fr 4fr; */
-    background: #212121;
+    background-image: url('../images/about-us-min.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
     /*background-image: url(../images/black-white-bg.jpg);
     background-attachment: fixed;
     background-position: cover;*/
@@ -184,8 +194,8 @@ body {
 .events-head{
     position: relative;
     top:0.2em;
-    font-size: 4.5em;
-    color: #FFE0B2;
+    font-size:5em;
+    color: white;
     font-family: 'Asap', sans-serif;
     text-align: center;
     margin-bottom: 8vh;
@@ -193,7 +203,7 @@ body {
 }
 .swiper-container {
     justify-self: end;
-      width: 85%;
+      width: 95%;
       height: 75vh;
  
     }
@@ -489,18 +499,21 @@ a.animated-button.victoria-one:after {
 
 /* events over */
 
-/* contact us */
+/* maps */
 .map{
     display: grid;
-    grid-template-rows:1fr 3fr; 
-    background: #e5e5e5
+    grid-template-columns:1fr 2fr; 
+    background: url('../images/map-bg.jpeg');
+    background-attachment: fixed;
 }
 .map-h{
+    color: white;
     position: relative;
     text-shadow: 6px 9px 20px #0000004a;
     font-size: 4em;
     font-family: 'Asap', sans-serif;
     text-align: center;
+    align-self: center;
     top: 0.1em;
 }
 .map-div{
@@ -509,8 +522,10 @@ a.animated-button.victoria-one:after {
     
 }
 #google-map{
-    transform: translateY(-10vh);
-    width: 90%
+    /* transform: translateY(-10vh); */
+    width: 80%;
+    height: 70%;
+    align-self: center
 }
 
 
@@ -522,7 +537,7 @@ a.animated-button.victoria-one:after {
     overflow: hidden;
     min-width: 300px; 
     height: 85vh;
-    background-image: url(http://lorempixel.com/output/sports-q-g-300-300-5.jpg);
+    background-image: url(http://www.pccoepune.com/images/facilities/2.jpg);
     background-size: cover;
     background-attachment:fixed;
     background-position:right top;
@@ -665,6 +680,7 @@ a.animated-button.victoria-one:after {
     top: 1.5em;
     }
     #spectrum-logo{
+        display: none;
         height: 3em;
     }
     .down-arrow img{
@@ -686,23 +702,34 @@ a.animated-button.victoria-one:after {
         font-size: 0.6em;     
     }
     .about-us-head{
-        align-self: end
+        align-self: end;
+        justify-self: center
     }
     .about-us-content{
         padding-left: 5%;
         padding-right: 5%;
-        font-size: 2.1em
+        font-size: 2.1em;
+        text-align: center
+    }
+    .map{
+        grid-template-columns: none;
+        grid-template-rows:1fr 3fr; 
     }
     .map-h{
+        align-self: flex-start;
         font-family: 'Titillium Web', sans-serif;
-        font-size: 2em;
-        top: 1.5em
+        font-size: 3em;
+        top: 1em
+    }
+    #google-map{
+        height: 90%;
+        width: 92%
     }
     .swiper-container{
         width: 100%;
     }
     .contact_us_fon{
-        opacity: 0.9;
+        opacity: 0.8;
     }
     .contact_us{
         min-width: 300px; 
@@ -725,6 +752,10 @@ a.animated-button.victoria-one:after {
         border: none;
         width: 100%; 
         
+      }
+      .contact_us{
+          background-position: -3vw;
+          background-attachment:fixed;
       }
       .f-spectrum{
         padding: 30px 0 0 1em;
