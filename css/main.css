@@ -172,9 +172,7 @@ body {
      padding: 2em  
 
 }
-.about-us-head b:hover{
-    text-decoration: underline
-}
+
 
 /*About Spectrum Over*/
 
@@ -691,7 +689,7 @@ a.animated-button.victoria-one:after {
     .events-head{
         margin-bottom: 12vh;
         padding-top: 2vh;
-        font-size: 2.5em
+        font-size: 3em
     }
 
     /* about-us */
@@ -709,7 +707,8 @@ a.animated-button.victoria-one:after {
         padding-left: 5%;
         padding-right: 5%;
         font-size: 2.1em;
-        text-align: center
+        text-align: center;
+        padding: 0.5em;
     }
     .map{
         grid-template-columns: none;

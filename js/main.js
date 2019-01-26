@@ -42,13 +42,22 @@ var swiper = new Swiper('.swiper-container', {
 });
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
+ 
     if(scroll>600)
     {
         $('#spectrum-logo').fadeIn('100')
     }
-    else{
+    else if(scroll<600){
         $('#spectrum-logo').fadeOut('100')
     }
+    // else if(scroll>3000){
+    //     $('#spectrum-logo').css('top','29vh');
+    //     $('#spectrum-logo').css('right','7em');
+    //     $('#spectrum-logo').css('height','17vh');
+    //     $('#spectrum-logo').css('left','0');
+        
+
+    // }
 });
 
 // full page .js

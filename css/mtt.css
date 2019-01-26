@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;        -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+     -ms-user-select: none;
+         user-select: none;
+         overflow-x: hidden;
+
+}
+.body{
+
+    transition:all ease-in 5s; /* tweak to your liking */
+}
+.page{
+    height: 100vh;
+    color: white;
+    background: url(../images/mtt-bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover
+    
+    
+}
+.landing{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+#pccoe-logo-img {
+    height: 4.2em; 
+    position: relative;
+    left: 0.5em;
+    top: 1em;
+    transition: 0.2s ease
+}
+#spectrum-logo{
+    position: relative;
+    top: 1em;
+    left: 3em;
+    height: 4em;
+
+    transition: 0.2s;
+    z-index: 10;
+}
+.title-heading{
+    font-size: 5.5vh;
+}
+.title-heading p{
+    padding-top:2vh 
+}
+.meet-h{
+    font-size: 6em;
+    align-self: center;
+    justify-self: center;
+}
+.patron{   
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1fr
+}
+.pat-h{
+    font-size: 5em;
+    padding-left:5%;
+    padding-top: 2vh;
+}
+.l1{
+    display: inline-flex;
+    justify-self: center
+}
+.l2{
+    justify-items: center;
+    display: inline-flex
+}
+.pp{
+    padding: 1em;
+    font-size: 1.8em;
+    margin-bottom: 2vh;
+    transition: all 0.5s
+
+}
+.head{
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 800
+}
+.tail{
+    text-align: center;
+    font-size: 0.8em
+}
+.pp:hover{
+    box-shadow: 1px 4px 20px #0000002e;
+}
+.ac{   
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 1.5fr 0.7fr
+}
+.ac .l1 .pp{
+    font-size: 1.4em;
+    margin-bottom:7vh;
+    padding: 0.8em
+}
+.ac .l1 .pp:hover{
+    background: #f443365c
+}
+.student{
+    display: grid;
+    grid-template-rows: 0.8fr 2fr 2fr;
+}
+.stu-title{
+    font-size: 4em;
+    padding-left: 5%
+}
+.nupur{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.nupur .stu-pic{
+    justify-self: start;
+    align-self: center
+}
+.stu-pic img{
+    height: 10em
+}
+.nupur .stu-info{
+    justify-self: center;
+    align-self: center
+}
+.name{
+    font-size: 3em
+}
+.post{
+    font-size: 1.9em
+}
+.ath{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.ath .stu-pic{
+    justify-self: flex-end;
+    align-self: center
+}
+.ath .stu-info{
+    justify-self: center;
+    align-self: center
+}
+.student-2{
+    display: grid;
+    grid-template-rows:  2fr 2fr;
+}
