@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Acme');
 *{
     padding: 0;
     margin: 0;
@@ -24,30 +25,40 @@
 }
 .landing{
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 0.6fr 4fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
 }
-#pccoe-logo-img {
-    height: 4.2em; 
-    position: relative;
+.logo {
+    /* height: 4.2em;  */
+    /* position: relative;
     left: 0.5em;
-    top: 1em;
+    top: 1em; */
+    justify-self: center;
+    align-items: center;
     transition: 0.2s ease
 }
+.logo img{
+    height: 5em;
+    padding-top: 1.5vh;
+}
 #spectrum-logo{
-    position: relative;
+    /* position: relative;
     top: 1em;
-    left: 3em;
-    height: 4em;
+    left: 3em; */
+    height: 5em;
+    padding-top: 2vh;
 
     transition: 0.2s;
     z-index: 10;
 }
 .title-heading{
+    display: inline-flex;
     font-size: 5.5vh;
+    justify-self: start
 }
 .title-heading p{
-    padding-top:2vh 
+    padding-top:1vh ;
+    align-self: center
 }
 .meet-h{
     font-size: 6em;
@@ -65,7 +76,10 @@
 }
 .l1{
     display: inline-flex;
-    justify-self: center
+    justify-self: center;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    overflow: hidden;
 }
 .l2{
     justify-items: center;
@@ -75,7 +89,8 @@
     padding: 1em;
     font-size: 1.8em;
     margin-bottom: 2vh;
-    transition: all 0.5s
+    transition: all 0.5s;
+    overflow: hidden;
 
 }
 .head{
@@ -89,6 +104,8 @@
 }
 .pp:hover{
     box-shadow: 1px 4px 20px #0000002e;
+    background: #ffffffb8;
+    color: black
 }
 .ac{   
     display: grid;
@@ -96,11 +113,13 @@
 }
 .ac .l1 .pp{
     font-size: 1.4em;
-    margin-bottom:7vh;
+    margin-bottom:14vh;
     padding: 0.8em
 }
 .ac .l1 .pp:hover{
-    background: #f443365c
+    box-shadow: 1px 4px 20px #0000002e;
+    background: #ffffffb8;
+    color: black
 }
 .student{
     display: grid;
@@ -146,4 +165,126 @@
 .student-2{
     display: grid;
     grid-template-rows:  2fr 2fr;
+}
+
+@media only screen and (max-width: 780px) and (min-width:300px)
+{
+    .landing{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+    #spectrum-logo{
+  
+        height: 8vh;
+    
+        transition: 0.2s;
+        z-index: 10;
+    }
+    .title-heading{
+        font-size: 3vh;
+        justify-self: start;
+        align-self: flex-start;
+        padding-top: 2vh;
+    }
+    .title-heading p{
+        padding-top:2vh 
+    }
+    .meet-h{
+        font-size: 5em;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        font-family: 'Acme', sans-serif;
+        
+    }
+    .patron{   
+        display: grid;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 0.1fr
+    }
+    .pat-h{
+        font-size: 3em;
+        text-decoration: underline
+    
+    }
+    .l1{
+        display: block;
+        justify-self: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        overflow: auto
+      
+    }
+    .l2{
+        justify-items: center;
+        display: block
+    }
+    .pp{
+        padding: 1em;
+        font-size: 1.5em;
+        margin-bottom: 3vh;
+        transition: all 0.5s;
+        overflow: auto
+    
+    }
+    .ac{   
+        display: grid;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 0.7fr
+    }
+    .ac .pat-h{
+        font-size: 2em;
+        text-decoration: underline
+    }
+    .ac .l1 .pp{
+        font-size: 1.4em;
+        margin-bottom:3vh;
+        padding: 0.8em
+    }
+    .student{
+        display: grid;
+        grid-template-rows: 0.5fr 2fr 2fr;
+    }
+    .stu-title{
+        font-size: 2.5em;
+        padding-left: 5%
+    }
+    .nupur{
+        display: grid;
+        grid-template-rows: 2fr 1.5fr;
+        grid-template-columns: none
+    }
+    .nupur .stu-pic{
+        justify-self: center;
+        align-self: center
+    }
+    .stu-pic img{
+        height: 15vh
+    }
+    .nupur .stu-info{
+        justify-self: center;
+        align-self: flex-end
+    }
+    .name{
+        font-size: 5vh
+    }
+    .post{
+        font-size: 3vh
+    }
+    .ath{
+        display: grid;
+        grid-template-rows: 1.5fr 2fr;
+        grid-template-columns: none
+    }
+    .ath .stu-pic{
+        justify-self: center;
+        align-self: flex-start
+    }
+    .ath .stu-info{
+        justify-self: center;
+        align-self: flex-start
+    }
+    .student-2{
+        display: grid;
+        grid-template-rows:  2fr 2fr;
+}
 }

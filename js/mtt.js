@@ -1,4 +1,4 @@
-AOS.init({ disable: 'mobile' });
+AOS.init({  });
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
