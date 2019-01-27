@@ -14,6 +14,15 @@
 
     transition:all ease-in 5s; /* tweak to your liking */
 }
+a {
+    all: unset;
+    cursor: pointer;
+    transition: ease 0.2s
+}
+a:hover{
+    color: black;
+    
+}
 .page{
     height: 100vh;
     color: white;
@@ -64,6 +73,7 @@
     font-size: 6em;
     align-self: center;
     justify-self: center;
+    font-family: 'Acme', sans-serif;
 }
 .patron{   
     display: grid;
@@ -138,11 +148,18 @@
     align-self: center
 }
 .stu-pic img{
-    height: 10em
+    height: 10em;
+    transition: ease 0.2s
 }
+/* .stu-pic img:hover {
+    transform: translateY(-1vh) scale(1.05);
+    filter:drop-shadow(1px 10px 5px black)
+} */
+
 .nupur .stu-info{
     justify-self: center;
-    align-self: center
+    align-self: center;
+    text-align: center
 }
 .name{
     font-size: 3em
@@ -160,12 +177,14 @@
 }
 .ath .stu-info{
     justify-self: center;
-    align-self: center
+    align-self: center;
+    text-align: center
 }
 .student-2{
     display: grid;
     grid-template-rows:  2fr 2fr;
 }
+.ph::before {font-family: FontAwesome; content: "\f10b";}
 
 @media only screen and (max-width: 780px) and (min-width:300px)
 {
@@ -243,6 +262,7 @@
     .student{
         display: grid;
         grid-template-rows: 0.5fr 2fr 2fr;
+        
     }
     .stu-title{
         font-size: 2.5em;
@@ -251,18 +271,20 @@
     .nupur{
         display: grid;
         grid-template-rows: 2fr 1.5fr;
-        grid-template-columns: none
+        grid-template-columns: none;
+        grid-template-areas: "a" "b" 
     }
     .nupur .stu-pic{
         justify-self: center;
-        align-self: center
+        align-self: center;
+        grid-area: a
     }
     .stu-pic img{
         height: 15vh
     }
     .nupur .stu-info{
         justify-self: center;
-        align-self: flex-end
+        align-self: flex-start
     }
     .name{
         font-size: 5vh
