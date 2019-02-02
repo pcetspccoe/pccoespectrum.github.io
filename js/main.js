@@ -25,9 +25,9 @@ var swiper = new Swiper('.swiper-container', {
         stretch: 0,
         depth: 150,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
     },
-    loop:true,
+    loop: true,
     autoplay: {
         enabled: true,
         delay: 3000,
