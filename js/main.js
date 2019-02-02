@@ -17,7 +17,7 @@ AOS.init({ disable: 'mobile' });
 
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
-    grabCursor: true,
+    grabCursor: false,
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
