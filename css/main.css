@@ -14,7 +14,8 @@
 
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
+    user-select: none;
 }
 body {
   /*-webkit-user-select: none;
@@ -22,7 +23,7 @@ body {
       -ms-user-select: none;
           user-select: none;*/
           overflow-x: hidden; 
-    /* overflow: hidden; */;
+    overflow: hidden;;
     
 }
 .page{
@@ -31,17 +32,73 @@ body {
 }
 
 /* DOCK */
-/* .dock{
-    display: none;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
+ .dock{
+       display: flex;
+       position: fixed;
+        top: 2vh;
+       height: 10vh;
+      
+       width:100%;
+        color: white;
+       z-index: 9999;
+    
+} 
+.dock::before{
+    content: "";
+    width: 50%;
+}
+.dock .text{
+    font-size: 1.4em;
+    padding-left: 1.1vw;
+   padding-right: 1.1vw;
+    line-height: 2.5;
+    font-family: 'Sarabun', sans-serif;
+    transition: 0.2s ease all;
+    cursor: pointer;
+    box-sizing: border-box
+}
+/*  grid-template-rows: 1fr 1fr 1fr 1fr ;
     position: fixed;
     top: 20vh;
     height: 60vh;
     left: 1em;
     width: 6%;
     background: green;
-    z-index: 9999;
-} */
+    z-index: 9999;; */
+.dock .text:hover{
+    background: white;
+    color: black;
+    
+}
+.active{
+    background: white;
+    color: black;
+}
+.ham{
+    position: fixed;
+    color: white;
+    visibility: hidden;
+    top: 3vh;
+    right: 8vw;
+    z-index: 99999999999999999999999999;
+}
+.lay{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #414d75e8;
+    z-index: 99999999999999999999999999;
+}
+.cut{
+    position: absolute;
+    top: 3vh;
+    right: 8vw;
+    transform: scale(3.5);
+    color: white;
+    z-index: 999999999999999999;
+}
+
 
 .swiper-pagination{
     transform: translateY(2vh);
@@ -60,27 +117,28 @@ body {
 
 .landing{
     display: grid;
-    background: url('../images/landing2.jpg');
+    background: url('../images/landing.jpg');
     background-attachment: fixed;
     background-size: cover;
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-columns: 1fr 2fr 1fr
 }
 #pccoe-logo-img {
-    height: 4.2em; 
+    height: 5em;
     position: relative;
-    left: 0.5em;
+    left: 1.5em;
     top: 0.5em;
-    transition: 0.2s ease
+    transition: 0.2s ease;
+    z-index: 9999999;
 }
 #spectrum-logo{
     position: fixed;
-    top: 1em;
-    left: 1em;
-    height: 4em;
+    top: 0.5em;
+    left: 0.5em;
+    height: 2.85em;
     filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
     transition: 0.2s;
-    z-index: 10;
+    z-index: 1000000000;
 }
 #spectrum-logo:hover{
     transform: scale(1.2)
@@ -119,6 +177,21 @@ body {
     font-size: 1.2em;
     text-align: center
 }
+.register{
+    color: black;
+    text-shadow: none;
+    cursor: pointer;
+    justify-self: center;
+    font-size: 2.2em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background: white;
+    border-radius: 6em;
+    width: 40%;
+    /* height: 150%; */
+    text-align: center;
+    line-height: 2;
+}
 .down-arrow{
     display: flex;
     justify-content: center;
@@ -134,6 +207,16 @@ body {
         transform: scale(1.2);
 
 }
+.timer{
+    justify-self: center;
+    align-self: center;
+}
+#demo{
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.5em
+
+}
 
 /* landing over */
 
@@ -147,10 +230,9 @@ body {
     background-image: url('../images/about-us-min.jpeg');
     background-size: cover;
     background-attachment: fixed;
-   /* background-color: #4158D0;
-  background-image: -webkit-linear-gradient(313deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  background-image: -o-linear-gradient(313deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    background-position-y: -20vh;
+
+  
     font-weight: 600
 }
 
@@ -178,22 +260,19 @@ body {
 
 /*Events*/
 .events{
-    /* display: grid;
-    grid-template-rows: 1fr 4fr; */
     background-image: url('../images/about-us-min.jpeg');
     background-size: cover;
     background-attachment: fixed;
-    /*background-image: url(../images/black-white-bg.jpg);
-    background-attachment: fixed;
-    background-position: cover;*/
+    background-position-y: -20vh;
  
     /* padding-left: 10vw */
 }
 .events-head{
+    visibility: hidden;
     position: relative;
     top:0.2em;
-    font-size:5em;
-    color: white;
+    font-size:3em;
+    color: black;
     font-family: 'Asap', sans-serif;
     text-align: center;
     margin-bottom: 8vh;
@@ -655,19 +734,33 @@ a.animated-button.victoria-one:after {
 
 /* media queries */
 @media only screen and (max-width: 780px) and (min-width:300px) {
+    body{
+        overflow: auto;
+    }
     .landing{
          grid-template-columns: 1fr 10fr 1fr;
+         background-position: -24em 0em
     }
     .dock{
-        display: none;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        position: fixed;
-        top: 30vh;
-        height: 40vh;
-        left: 0.5em;
-        width: 10%;
-        background: green;
+     display: none
+   
     }
+    .ham{
+        visibility: visible
+    }
+    .lay .dock{
+        display: block;
+        text-align: center;
+        padding-top: 2vh
+    }
+    .lay .dock .text {
+        font-size: 2.5em
+    }
+    .ham-con{
+    position: relative;
+    top: 3.5vh;
+    transform: scale(1.9)
+}
     .spectrum-landing{
         font-size: 0.52em
     }
@@ -675,21 +768,28 @@ a.animated-button.victoria-one:after {
     height: 2.8em;
     position: relative;
     left: 1.5em;
-    top: 1.5em;
+    top: 5vh;
     }
     #spectrum-logo{
+        top: 2vh;
         display: none;
-        height: 3em;
+        height: 3.9em;
     }
     .down-arrow img{
     height: 4.5em;
     }
 
     /* events */
+    .events{
+        background-position-y: 2vh;
+        background-position-x: -80vw;
+    }
     .events-head{
+        color: white;
         margin-bottom: 12vh;
         padding-top: 2vh;
-        font-size: 3em
+        font-size: 3em;
+        visibility: visible
     }
 
     /* about-us */
@@ -697,7 +797,9 @@ a.animated-button.victoria-one:after {
     .about-us{
         grid-template-columns: none;
         grid-template-rows: 0.5fr 2fr;
-        font-size: 0.6em;     
+        font-size: 0.6em;  
+        background-position-y: 2vh;
+        background-position-x: -80vw;   
     }
     .about-us-head{
         align-self: end;
