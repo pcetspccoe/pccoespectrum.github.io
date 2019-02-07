@@ -761,6 +761,9 @@ a.animated-button.victoria-one:after {
     top: 3.5vh;
     transform: scale(1.9)
 }
+.timer{
+    visibility: hidden
+}
     .spectrum-landing{
         font-size: 0.52em
     }
