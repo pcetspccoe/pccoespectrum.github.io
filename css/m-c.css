@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
 *{
@@ -6,33 +6,62 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+body{
+    background: url('../images/m_c-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    user-select: none;
+    overflow: hidden;
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 
-.conatiner{
+.head{
+    font-size: 3em;
+    text-align: center;
     position: relative;
-    width: 60vw;
-    margin: 10vh 20em;
+    top: 3vh;
+}
+.conatiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
+  
+    /* grid-template-columns: 1fr 1fr ;
     grid-template-rows: 440px;
-    grid-gap: 40px;
+    grid-gap: 40px; */
 }
 .conatiner .card{
     position: relative;
     background: #000;
     overflow:hidden;
-    width: 65%;
-    height: 65vh;
+    width: 300px;
+    height: 70vh;
+    max-height: 550px;
     transition: 0.5s;
     border-radius: 10px;
+    margin: 2vw 0;
 }
+
 .conatiner .card:hover{
     transform: translateY(-2vh);
-    box-shadow: 0 20px 20px rgba(0,0,0,0.2)
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);  
+
 }
 .img-box img{
     width: 100%;
-    transform: translateY(-4vh)
+    /* filter: grayscale(100%); */
+   /* height: 100%; */
 }
 .img-box{
     position: absolute;
@@ -44,6 +73,12 @@
 }
 .conatiner .card:hover .img-box{
     opacity: 0.5
+}
+.conatiner:hover .suyash:hover  .img-box img{
+    filter: blur(2px)
+}
+.conatiner:hover .tejas:hover  .img-box img{
+    filter: blur(2px)
 }
 .conatiner .card .content{
     position: absolute;
@@ -60,7 +95,10 @@
     bottom: 0;
 }
 .conatiner .card:nth-child(1) .content{
-    background: linear-gradient(0deg,#ff0018,transparent)
+    background: linear-gradient(0deg,#9e9e9e,transparent)
+}
+.conatiner .card:nth-child(2) .content{
+    background: linear-gradient(0deg,#607D8B,transparent)
 }
 .conatiner .card ,.content h2{
     margin:  0 0 10px;
@@ -94,18 +132,32 @@
 
     color: yellow
 }
- */
-.box{
-    height: 50vh;
-    width: 50vw;
-    background: green;
-    position: fixed;
-    top: 25%;
-    left: 25%;
+.conatiner .card{
+    position: relative;
+    background: #000;
+    overflow:hidden;
+    width: 350px;
+    height: 70vh;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 10vh 2vw;
+    z-index: 3;
+    animation-delay: 1s;
 }
-.circle{
-    width: 45%;
-    height: 70%;
-    background: red;
-    border-radius: 50em;
+
+@media only screen and (max-width: 780px) and (min-width:300px)
+{
+    body{
+        overflow: auto
+    }
+    .conatiner{
+        flex-direction: column
+    }
+    .conatiner .card{
+        margin: 5vh 3vw;
+        height: 70vh;
+    }
+    .head{
+        padding-bottom: 3.2vh;
+    }
 }
