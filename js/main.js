@@ -78,9 +78,12 @@ $(window).scroll(function (event) {
     if(scroll>600)
     {
         $('#spectrum-logo').fadeIn('100')
-        $('.dock ').css('background','#2b2a2dc9')
+        
+        if (jQuery(window).width() > 780) {
+            $('.dock ').css('background','#2b2a2dc9')
         $('.dock ').css('top','0')
         $('.dock ').css('height','8vh')
+        }  
 
     }
     else if(scroll<600){
