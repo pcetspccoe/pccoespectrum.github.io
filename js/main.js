@@ -148,3 +148,12 @@ $('.cut').click(()=>{
     $('.container').css('filter','blur(0px)');
     $('.lay').css('display','none')
 })
+
+$(".register").click(()=>{
+    Swal.fire({
+      title:"To register online please install our PCCOE's Spectrum 2019 App from Playstore",
+      imageUrl: '../images/swal-logo.png',
+      imageAlt: 'playstore'
+  
+    })
+  })

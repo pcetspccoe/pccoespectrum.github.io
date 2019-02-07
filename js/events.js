@@ -17,7 +17,16 @@ swiper.on('slideChange', () => {
   console.log('slide')
 })
 
-// swiper for presentation
+// swap
+
+$(".btnPush").click(()=>{
+  Swal.fire({
+    title:"To register online please install our PCCOE's Spectrum 2019 App from Playstore",
+    imageUrl: '../images/swal-logo.png',
+    imageAlt: 'playstore'
+
+  })
+})
 
 
 
