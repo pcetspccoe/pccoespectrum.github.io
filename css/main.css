@@ -48,7 +48,7 @@ body {
     width: 50%;
 }
 .dock .text{
-    font-size: 1.4em;
+    font-size: 1.55vw;
     padding-left: 1.1vw;
    padding-right: 1.1vw;
     line-height: 2.5;
@@ -191,6 +191,9 @@ body {
     /* height: 150%; */
     text-align: center;
     line-height: 2;
+}
+#demo-mob{
+    display: none
 }
 .down-arrow{
     display: flex;
@@ -739,7 +742,7 @@ a.animated-button.victoria-one:after {
     }
     .landing{
          grid-template-columns: 1fr 10fr 1fr;
-         background-position: -24em 0em
+         /* background-position: -24em 0em */
     }
     .dock{
      display: none
@@ -761,9 +764,20 @@ a.animated-button.victoria-one:after {
     top: 3.5vh;
     transform: scale(1.9)
 }
-.timer{
-    visibility: hidden
+.timer-mob{
+    display: flex;
+    justify-content: center;
 }
+#demo-mob{
+    display: initial;
+    color: white;
+    text-align: center;
+    font-size: 3.2vh;
+}
+#demo{
+    display: none
+}
+
     .spectrum-landing{
         font-size: 0.52em
     }

@@ -27,6 +27,9 @@ $(".btnPush").click(()=>{
 
   })
 })
+$('.home').click(()=>{
+  window.location.href='/'
+})
 
 
 

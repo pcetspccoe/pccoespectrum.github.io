@@ -26,6 +26,19 @@ body {
 	left: 0;
 	z-index: 1;
 }
+.home{
+	position: absolute;
+    top: 2vh;
+    font-size: 8vh;
+		left: 3vw;
+		transition: all 0.2s ease
+}
+.prizes{
+	font-size: 1.5em;
+}
+.home:hover{
+	transform: scale(1.1)
+}
 .swiper-container {
 	width: 100%;
 	height: 100vh;
@@ -273,9 +286,7 @@ p {
 	color: black;
 	font-size: 0.85em;
 }
-#robo .image img{
-	display: none;
-}
+
 .robo-title{
 	color: black;
 	font-size: 4em;
@@ -317,6 +328,12 @@ p {
 	.page{
 	grid-template-columns: none;
 	grid-template-rows: 1fr 4fr
+}
+.home{
+	font-size: 5vh;
+}
+.prizes{
+	font-size: 1em
 }
 	#brain-image{
 	filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.28));

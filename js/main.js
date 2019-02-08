@@ -11,6 +11,10 @@ const scroll0=()=>{
     $('html, body').animate({
         scrollTop: $(".landing").offset().top
     }, 1200);
+    $('.container').css('filter','blur(0px)');
+    $('.lay').fadeOut(500)
+    if($(window).width()<777)
+    $('.ham').css('visibility','visible');
 }
 const scroll1=()=>{
     console.log('click')
@@ -21,26 +25,46 @@ const scroll1=()=>{
     $('html, body').animate({
         scrollTop: $(".about-us").offset().top
     }, 1200);
+    $('.container').css('filter','blur(0px)');
+    $('.lay').fadeOut(500)
+    if($(window).width()<777)
+    $('.ham').css('visibility','visible');
 }
 const scroll2=()=>{
     $('html, body').animate({
         scrollTop: $(".events").offset().top
     }, 1200);
+    $('.container').css('filter','blur(0px)');
+    $('.lay').fadeOut(500)
+    if($(window).width()<777)
+    $('.ham').css('visibility','visible');
 }
 const scroll3=()=>{
     $('html, body').animate({
         scrollTop: $(".map").offset().top
     }, 1200);
+    $('.container').css('filter','blur(0px)');
+    $('.lay').fadeOut(500)
+    if($(window).width()<777)
+    $('.ham').css('visibility','visible');
 }
 const scroll4=()=>{
     $('html, body').animate({
         scrollTop: $(".contact_us").offset().top
     }, 1200);
+    $('.container').css('filter','blur(0px)');
+    $('.lay').fadeOut(500)
+    if($(window).width()<777)
+    $('.ham').css('visibility','visible');
 }
 const scroll5=()=>{
     $('html, body').animate({
         scrollTop: $(".map").offset().top
     }, 1200);
+    $('.container').css('filter','blur(0px)');
+    $('.lay').fadeOut(500)
+    if($(window).width()<777)
+    $('.ham').css('visibility','visible');
 }
 $("#spectrum-logo").css('display','none');
 AOS.init({ disable: 'mobile' });
@@ -74,15 +98,17 @@ var swiper = new Swiper('.swiper-container', {
 });
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
+   
  
     if(scroll>600)
     {
         $('#spectrum-logo').fadeIn('100')
         
         if (jQuery(window).width() > 780) {
-            $('.dock ').css('background','#2b2a2dc9')
+        $('.dock ').css('background','#2b2a2dc9')
         $('.dock ').css('top','0')
         $('.dock ').css('height','8vh')
+        
         }  
 
     }
@@ -131,25 +157,29 @@ var x = setInterval(function() {
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+  document.getElementById("demo-mob").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo-mob").innerHTML = "EXPIRED";
   }
 }, 1000);
 
 
 const mob_show =() =>{
     $('.ham').css('visibility','hidden');
+    $('.lay').fadeIn(100)
     $('.container').css('filter','blur(3px)');
-    $('.lay').css('display','block')
+    
 }
 
 $('.cut').click(()=>{
     $('.ham').css('visibility','visible');
     $('.container').css('filter','blur(0px)');
-    $('.lay').css('display','none')
+    $('.lay').fadeOut(100)
 })
 
 $(".register").click(()=>{
