@@ -773,6 +773,8 @@ a.animated-button.victoria-one:after {
     color: white;
     text-align: center;
     font-size: 3.2vh;
+    font-family: 'Sarabun', sans-serif;
+
 }
 #demo{
     display: none
