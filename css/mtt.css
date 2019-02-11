@@ -195,6 +195,19 @@ a:hover{
 }
 .ph::before {font-family: FontAwesome; content: "\f10b";}
 
+.creators {
+    display: grid;
+    grid-template-rows: 0.8fr 2fr 2fr;
+}
+.creators .head{
+    
+    font-size: 4.1em;
+    text-align: left;
+    font-weight: 800;
+    margin-top: 5vh;
+    margin-left: 6vw;
+}
+
 @media only screen and (max-width: 780px) and (min-width:300px)
 {
     .landing{
@@ -317,5 +330,13 @@ a:hover{
     .student-2{
         display: grid;
         grid-template-rows:  2fr 2fr;
+}
+.creators .head{
+    
+    font-size: 2em;
+    text-align: left;
+    font-weight: 800;
+    margin-top: 5vh;
+    margin-left: 6vw;
 }
 }
