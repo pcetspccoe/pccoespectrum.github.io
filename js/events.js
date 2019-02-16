@@ -25,7 +25,10 @@ $(".btnPush").click(()=>{
     imageUrl: '../images/swal-logo.png',
     imageAlt: 'playstore'
 
-  })
+  }).then(res=>{
+    if(res)
+    window.location.href='https://play.google.com/store/apps/details?id=pcets.com.pccoe.spectrum'
+})
 })
 $('.home').click(()=>{
   window.location.href='/'

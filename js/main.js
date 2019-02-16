@@ -186,7 +186,11 @@ $(".register").click(()=>{
     Swal.fire({
       title:"To register online please install our PCCOE's Spectrum 2019 App from Playstore",
       imageUrl: '../images/swal-logo.png',
-      imageAlt: 'playstore'
+      imageAlt: 'playstore',
+       
   
+    }).then(res=>{
+        if(res)
+        window.location.href='https://play.google.com/store/apps/details?id=pcets.com.pccoe.spectrum'
     })
   })
