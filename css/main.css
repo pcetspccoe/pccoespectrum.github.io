@@ -117,7 +117,7 @@ body {
 
 .landing{
     display: grid;
-    background: url('../images/landing.jpg');
+    background: url('../images/background-618226_1280.png');
     background-attachment: fixed;
     background-size: cover;
     grid-template-rows: 1fr 2fr 1fr;
@@ -226,11 +226,11 @@ body {
 /*About Spectrum*/
 
 .about-us{
-    color: white;
+    color: black;
     display: grid;
     grid-template-rows: 1fr 2.5fr;
     /* background-attachment: fixed; */
-    background-image: url('../images/about-us-min.jpeg');
+    background-image: url('../images/bacground-618226_1280.png');
     background-size: cover;
     background-attachment: fixed;
     background-position-y: -20vh;
@@ -263,7 +263,7 @@ body {
 
 /*Events*/
 .events{
-    background-image: url('../images/about-us-min.jpeg');
+    background-image: url('../images/background-618226_1280.png');
     background-size: cover;
     background-attachment: fixed;
     background-position-y: -20vh;
