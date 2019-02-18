@@ -113,18 +113,19 @@ $(window).scroll(function (event) {
 
     }
     else if(scroll<600){
-        $('.landing').css('background-position-y','-'+scroll*0.09+'vh')
+        if(screen.width>800)
+            $('.landing').css('background-position-y','-'+scroll*0.09+'vh')
         $('#spectrum-logo').fadeOut('100')
         $('.dock').css('background','none')
         $('.dock ').css('top','2vh')
     }
-    if(scroll>750){
+    if(scroll>750 && screen.width>800){
         $('.events').css('background-position-y','-'+scroll*0.09+'vh')
     }
-    if(scroll>950){
+    if(scroll>950 && screen.width>800){
         $('.map').css('background-position-y','-'+scroll*0.05+'vh')
     }
-    if(scroll>1050){
+    if(scroll>1050 && screen.width>800){
         $('.contact_us').css('background-position-y','-'+scroll*0.05+'vh')
     }
 });
