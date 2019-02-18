@@ -742,7 +742,7 @@ a.animated-button.victoria-one:after {
     }
     .landing{
          grid-template-columns: 1fr 10fr 1fr;
-         /* background-position: -24em 0em */
+          background-position: -24em 0em 
     }
     .dock{
      display: none
