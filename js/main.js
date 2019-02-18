@@ -15,6 +15,7 @@ const scroll0=()=>{
     $('.lay').fadeOut(500)
     if($(window).width()<777)
     $('.ham').css('visibility','visible');
+    $('body').css('overflow-y','auto')
 }
 const scroll1=()=>{
     console.log('click')
@@ -29,6 +30,7 @@ const scroll1=()=>{
     $('.lay').fadeOut(500)
     if($(window).width()<777)
     $('.ham').css('visibility','visible');
+    $('body').css('overflow-y','auto')
 }
 const scroll2=()=>{
     $('html, body').animate({
@@ -38,6 +40,7 @@ const scroll2=()=>{
     $('.lay').fadeOut(500)
     if($(window).width()<777)
     $('.ham').css('visibility','visible');
+    $('body').css('overflow-y','auto')
 }
 const scroll3=()=>{
     $('html, body').animate({
@@ -47,6 +50,7 @@ const scroll3=()=>{
     $('.lay').fadeOut(500)
     if($(window).width()<777)
     $('.ham').css('visibility','visible');
+    $('body').css('overflow-y','auto')
 }
 const scroll4=()=>{
     $('html, body').animate({
@@ -56,6 +60,7 @@ const scroll4=()=>{
     $('.lay').fadeOut(500)
     if($(window).width()<777)
     $('.ham').css('visibility','visible');
+    $('body').css('overflow-y','auto')
 }
 const scroll5=()=>{
     $('html, body').animate({
@@ -65,6 +70,7 @@ const scroll5=()=>{
     $('.lay').fadeOut(500)
     if($(window).width()<777)
     $('.ham').css('visibility','visible');
+    $('body').css('overflow-y','auto')
 }
 $("#spectrum-logo").css('display','none');
 AOS.init({ disable: 'mobile' });
@@ -173,6 +179,7 @@ var x = setInterval(function() {
 
 
 const mob_show =() =>{
+    $('body').css('overflow-y','hidden')
     $('.ham').css('visibility','hidden');
     $('.lay').fadeIn(100)
     $('.container').css('filter','blur(3px)');
@@ -180,6 +187,7 @@ const mob_show =() =>{
 }
 
 $('.cut').click(()=>{
+    $('body').css('overflow-y','auto')
     $('.ham').css('visibility','visible');
     $('.container').css('filter','blur(0px)');
     $('.lay').fadeOut(100)
