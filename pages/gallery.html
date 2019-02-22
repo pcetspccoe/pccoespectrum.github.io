@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/gallery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+
+        <h2>The Spectrum Memories!</h2>
+
+        <p>
+          Photos and Videos from the previous year events of Spectrum.
+        </p>
+        
+        <hr class="my-5" />
+        
+        <p class="imglist" style="max-width: 1000px;">
+          <a href="https://firebasestorage.googleapis.com/v0/b/spectrum-images-for-gallery.appspot.com/o/DSC_0567.JPG?alt=media&token=66db517c-eb5f-4194-89ed-f92a2273cf26" data-fancybox="images" data-caption="Backpackers following a dirt trail">
+            <img src="gs://spectrum-images-for-gallery.appspot.com/DSC_0567.JPG" />
+          </a>
+        
+          <a href="https://source.unsplash.com/eWFdaPRFjwE/1500x1000" data-fancybox="images" data-caption="Mallorca, Llubí, Spain">
+            <img src="https://source.unsplash.com/eWFdaPRFjwE/240x160" />
+          </a>
+        
+          <a href="https://source.unsplash.com/c1JxO-uAZd0/1500x1000" data-fancybox="images" data-caption="Danish summer">
+            <img src="https://source.unsplash.com/c1JxO-uAZd0/240x160" />
+          </a>
+        
+          <a href="https://source.unsplash.com/eXHeq48Z-Q4/1500x1000" data-fancybox="images" data-caption="Sunrise above a sandy beach">
+            <img src="https://source.unsplash.com/eXHeq48Z-Q4/240x160" />
+          </a>
+        
+          <a href="https://source.unsplash.com/RFgO9B_OR4g/1500x1000" data-fancybox="images" data-caption="Woman on a slope by the shore">
+            <img src="https://source.unsplash.com/RFgO9B_OR4g/240x160" />
+          </a>
+        
+          <a href="https://source.unsplash.com/7bwQXzbF6KE/1500x1000" data-fancybox="images" data-caption="Mountain hiking sunset">
+            <img src="https://source.unsplash.com/7bwQXzbF6KE/240x160" />
+          </a>
+        
+          <a href="https://source.unsplash.com/NhU0nUR7920/1500x1000" data-fancybox="images" data-caption="Sunset Picnic">
+            <img src="https://source.unsplash.com/NhU0nUR7920/240x160" />
+          </a>
+        
+          <a href="https://source.unsplash.com/B2LYYV9-y0s/1500x1000" data-fancybox="images" data-caption="On them Indiana Nights">
+            <img src="https://source.unsplash.com/B2LYYV9-y0s/240x160" />
+          </a>
+        </p>
+
+    <!-- Script Tags -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCse8YkSYaQcsVlz3SZs_xn9LkRZrsP8Yw",
+    authDomain: "spectrum-images-for-gallery.firebaseapp.com",
+    databaseURL: "https://spectrum-images-for-gallery.firebaseio.com",
+    projectId: "spectrum-images-for-gallery",
+    storageBucket: "spectrum-images-for-gallery.appspot.com",
+    messagingSenderId: "1000446901556"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

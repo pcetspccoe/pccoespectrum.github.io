@@ -5,8 +5,22 @@ $('html, body').animate({
 
 
 
+/**********Open Gallery**********/
+
+function team() {
+    const win = window.open('pages/gallery.html', '_blank');
+    if (win) {
+        //Browser has allowed it to be opened
+        win.focus();
+    } else {
+        //Browser has blocked it
+        alert('Please allow popups for this website');
+    }
+}
 
 /**************clickOnDownArrow**************/
+
+
 const scroll0=()=>{
     $('html, body').animate({
         scrollTop: $(".landing").offset().top
