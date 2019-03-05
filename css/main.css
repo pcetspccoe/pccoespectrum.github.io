@@ -725,7 +725,28 @@ a.animated-button.victoria-one:after {
     padding-top: 7vh;
     font-family: 'Fjalla One', sans-serif;
   }
-    
+  
+  .sponsor{
+      display: grid;
+      grid-template-rows: 0.5fr 2fr;
+  }
+  .sponsor-head{
+    font-family: 'Sarabun', sans-serif;
+      font-size: 5em;
+      text-align: center;
+
+      position: relative;
+      top: 2vh;
+  }
+  .sponsor-content{
+    display: flex;
+    justify-content: center;
+  }
+  .sponsor-content img{
+    height: 24em;
+    justify-self: center;
+    filter: drop-shadow(1px 8px 16px #00000075);
+  }
     
    
   
