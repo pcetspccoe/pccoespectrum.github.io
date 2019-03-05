@@ -758,6 +758,9 @@ a.animated-button.victoria-one:after {
 
 /* media queries */
 @media only screen and (max-width: 780px) and (min-width:300px) {
+    .sponsor-head{
+        font-size: 3em
+      }
     body{
         overflow: auto;
     }
