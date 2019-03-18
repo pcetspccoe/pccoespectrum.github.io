@@ -8,7 +8,7 @@ $('html, body').animate({
 /**********Open Gallery**********/
 
 function team() {
-    const win = window.open('pages/gallery.html', '_blank');
+    const win = window.open('https://drive.google.com/drive/folders/1sAJ4zq11Q0nlvtEDxM_GqTMmoDSqndrn?usp=sharing', '_blank');
     if (win) {
         //Browser has allowed it to be opened
         win.focus();
