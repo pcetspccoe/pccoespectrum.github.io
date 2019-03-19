@@ -117,7 +117,7 @@ body {
 
 .landing{
     display: grid;
-    background: url('../images/background-618226_1280.png');
+    background: url('../images/l-background.jpg');
     background-attachment: fixed;
     background-size: cover;
     grid-template-rows: 1fr 2fr 1fr;
@@ -226,11 +226,11 @@ body {
 /*About Spectrum*/
 
 .about-us{
-    color: black;
+    color: white;
     display: grid;
     grid-template-rows: 1fr 2.5fr;
     /* background-attachment: fixed; */
-    background-image: url('../images/bacground-618226_1280.png');
+    background:#250B65;
     background-size: cover;
     background-attachment: fixed;
     background-position-y: -20vh;
@@ -263,7 +263,7 @@ body {
 
 /*Events*/
 .events{
-    background-image: url('../images/background-618226_1280.png');
+    background-image: url('../images/l-background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position-y: -20vh;
@@ -583,7 +583,7 @@ a.animated-button.victoria-one:after {
 .map{
     display: grid;
     grid-template-columns:1fr 2fr; 
-    background: url('../images/map-bg.jpeg');
+    background: url('../images/m-background.jpg');
     background-attachment: fixed;
 }
 .map-h{
@@ -617,10 +617,12 @@ a.animated-button.victoria-one:after {
     overflow: hidden;
     min-width: 300px; 
     height: 85vh;
-    background-image: url(http://www.pccoepune.com/images/facilities/2.jpg);
+    /* background-image: url(http://www.pccoepune.com/images/facilities/2.jpg); */
+    background-image: url('https://images.wallpaperscraft.com/image/solar_eclipse_april_2014_antarctica_australia_indonesia_93004_1680x1050.jpg');
     background-size: cover;
     background-attachment:fixed;
-    background-position:right top;
+    background-position-y: -1vh;
+   
   }
   .contact_us_fon{
     background-color: #232424;
@@ -727,6 +729,8 @@ a.animated-button.victoria-one:after {
   }
   
   .sponsor{
+      background: #3f51b5;
+      color: white;
       display: grid;
       grid-template-rows: 0.5fr 2fr;
   }

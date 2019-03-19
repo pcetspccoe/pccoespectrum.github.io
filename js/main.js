@@ -146,7 +146,7 @@ $(window).scroll(function (event) {
         $('.map').css('background-position-y','-'+scroll*0.05+'vh')
     }
     if(scroll>1050 && screen.width>800){
-        $('.contact_us').css('background-position-y','-'+scroll*0.05+'vh')
+        $('.contact_us').css('background-position-y','-'+scroll*0.0005+'vh')
     }
 });
 
