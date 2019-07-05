@@ -186,8 +186,8 @@ var x = setInterval(function() {
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-    document.getElementById("demo-mob").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "31st March, 2019";
+    document.getElementById("demo-mob").innerHTML = "31st March, 2019";
   }
 }, 1000);
 
