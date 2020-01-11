@@ -207,14 +207,17 @@ $('.cut').click(() => {
 })
 
 $(".register").click(() => {
-    Swal.fire({
-        title: "To register online please install our PCCOE's Spectrum 2019 App from Playstore",
-        imageUrl: '../images/swal-logo.png',
-        imageAlt: 'playstore',
+    Swal.fire(
+     `Registrations will be starting soon! <br> Follow our Instagram handle for further updates <br>`,
+        // imageUrl: 'http://i.imgur.com/VuGK6i8.png',
+        // imageAlt: 'instagram',
+        ` <a href="https://www.instagram.com/pccoespectrum/" target="_blank">
+        <img src="http://i.imgur.com/VuGK6i8.png" alt="insta" width="70px">
+    </a>`
+        
 
-
-    }).then(res => {
-        if (res)
-            window.location.href = 'https://play.google.com/store/apps/details?id=pcets.com.pccoe.spectrum'
+    ).then(res => {
+        // if (res)
+        //     window.location.href = 'https://play.google.com/store/apps/details?id=pcets.com.pccoe.spectrum'
     })
 })

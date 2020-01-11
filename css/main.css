@@ -475,9 +475,9 @@ a.animated-button.victoria-one:after {
 #short-movie {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/movie\ making.jpg');
+       background: url('../images/project.jpg');
        background-size: cover; 
-       background-position-x: 0px;      
+       background-position-x: -173px;      
    
 }
 #short-movie .event-heading{
@@ -934,4 +934,8 @@ a.animated-button.victoria-one:after {
         padding-top: 7vh;
         font-family: 'Fjalla One', sans-serif;
       }
+}
+
+.event-content{
+    display: none; /* for hiding more info*/
 }
