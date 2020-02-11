@@ -117,7 +117,7 @@ body {
 
 .landing{
     display: grid;
-    background: url('../images/landing.jpg');
+    background: url('../images/l-background.jpg');
     background-attachment: fixed;
     background-size: cover;
     grid-template-rows: 1fr 2fr 1fr;
@@ -230,7 +230,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 2.5fr;
     /* background-attachment: fixed; */
-    background-image: url('../images/about-us-min.jpeg');
+    background:#250B65;
     background-size: cover;
     background-attachment: fixed;
     background-position-y: -20vh;
@@ -263,7 +263,7 @@ body {
 
 /*Events*/
 .events{
-    background-image: url('../images/about-us-min.jpeg');
+    background-image: url('../images/l-background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position-y: -20vh;
@@ -475,9 +475,9 @@ a.animated-button.victoria-one:after {
 #short-movie {
       display: grid;
       grid-template-rows: 2fr 1fr;
-       background: url('../images/movie\ making.jpg');
+       background: url('../images/project.jpg');
        background-size: cover; 
-       background-position-x: 0px;      
+       background-position-x: -173px;      
    
 }
 #short-movie .event-heading{
@@ -583,7 +583,7 @@ a.animated-button.victoria-one:after {
 .map{
     display: grid;
     grid-template-columns:1fr 2fr; 
-    background: url('../images/map-bg.jpeg');
+    background: url('../images/m-background.jpg');
     background-attachment: fixed;
 }
 .map-h{
@@ -617,10 +617,12 @@ a.animated-button.victoria-one:after {
     overflow: hidden;
     min-width: 300px; 
     height: 85vh;
-    background-image: url(http://www.pccoepune.com/images/facilities/2.jpg);
+    /* background-image: url(http://www.pccoepune.com/images/facilities/2.jpg); */
+    background-image: url('https://images.wallpaperscraft.com/image/solar_eclipse_april_2014_antarctica_australia_indonesia_93004_1680x1050.jpg');
     background-size: cover;
     background-attachment:fixed;
-    background-position:right top;
+    background-position-y: -1vh;
+   
   }
   .contact_us_fon{
     background-color: #232424;
@@ -725,7 +727,30 @@ a.animated-button.victoria-one:after {
     padding-top: 7vh;
     font-family: 'Fjalla One', sans-serif;
   }
-    
+  
+  .sponsor{
+      background: #3f51b5;
+      color: white;
+      display: grid;
+      grid-template-rows: 0.5fr 2fr;
+  }
+  .sponsor-head{
+    font-family: 'Sarabun', sans-serif;
+      font-size: 5em;
+      text-align: center;
+
+      position: relative;
+      top: 2vh;
+  }
+  .sponsor-content{
+    display: flex;
+    justify-content: center;
+  }
+  .sponsor-content img{
+    height: 24em;
+    justify-self: center;
+    filter: drop-shadow(1px 8px 16px #00000075);
+  }
     
    
   
@@ -737,12 +762,15 @@ a.animated-button.victoria-one:after {
 
 /* media queries */
 @media only screen and (max-width: 780px) and (min-width:300px) {
+    .sponsor-head{
+        font-size: 3em
+      }
     body{
         overflow: auto;
     }
     .landing{
          grid-template-columns: 1fr 10fr 1fr;
-         /* background-position: -24em 0em */
+          background-position: -24em 0em 
     }
     .dock{
      display: none
@@ -906,4 +934,8 @@ a.animated-button.victoria-one:after {
         padding-top: 7vh;
         font-family: 'Fjalla One', sans-serif;
       }
+}
+
+.event-content{
+    display: none; /* for hiding more info*/
 }

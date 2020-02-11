@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/gallery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+          
+        <h2>Gallery</h2>        
+
+        <p class="imglist" >
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1056-min.JPG?raw=true" data-fancybox="images" data-caption="Robo Soccer">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1056-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1050-min.JPG?raw=true" data-fancybox="images" data-caption="Robo Soccer">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1050-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1038-min.JPG?raw=true" data-fancybox="images" data-caption="Brain Dasher">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1038-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1037-min.JPG?raw=true" data-fancybox="images" data-caption="Brain Dasher">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1037-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1032-min.JPG?raw=true" data-fancybox="images" data-caption="Tech Treasure Hunt">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1032-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1024-min.JPG?raw=true" data-fancybox="images" data-caption="Tech Treasure Hunt">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1024-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1001-min.JPG?raw=true" data-fancybox="images" data-caption="Tech Treasure Hunt">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1001-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1005-min.JPG?raw=true" data-fancybox="images" data-caption="Tech Treasure Hunt">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_1005-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0995-min.JPG?raw=true" data-fancybox="images" data-caption="Tech Treasure Hunt">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0995-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0991-min.JPG?raw=true" data-fancybox="images" data-caption="Tech Treasure Hunt">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0991-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0985-min.JPG?raw=true" data-fancybox="images" data-caption="Electrica">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0985-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0976-min.JPG?raw=true" data-fancybox="images" data-caption="Electrica">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0976-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          <a href="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0567-min.JPG?raw=true" data-fancybox="images" data-caption="Electrica">
+            <img src="https://github.com/pccoespectrum/gallery-database/blob/master/DSC_0567-min.JPG?raw=true" height="160" width="240"/>
+          </a>
+          
+          
+        </p>
+
+    <!-- Script Tags -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCse8YkSYaQcsVlz3SZs_xn9LkRZrsP8Yw",
+    authDomain: "spectrum-images-for-gallery.firebaseapp.com",
+    databaseURL: "https://spectrum-images-for-gallery.firebaseio.com",
+    projectId: "spectrum-images-for-gallery",
+    storageBucket: "spectrum-images-for-gallery.appspot.com",
+    messagingSenderId: "1000446901556"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
