@@ -207,17 +207,13 @@ $('.cut').click(() => {
 })
 
 $(".register").click(() => {
-    Swal.fire(
-     `Registrations will be starting soon! <br> Follow our Instagram handle for further updates <br>`,
-        // imageUrl: 'http://i.imgur.com/VuGK6i8.png',
-        // imageAlt: 'instagram',
-        ` <a href="https://www.instagram.com/pccoespectrum/" target="_blank">
-        <img src="http://i.imgur.com/VuGK6i8.png" alt="insta" width="70px">
-    </a>`
-        
-
-    ).then(res => {
-        // if (res)
-        //     window.location.href = 'https://play.google.com/store/apps/details?id=pcets.com.pccoe.spectrum'
+    Swal.fire({
+        title:"To register online visit the link and fill in the required details. You'll be redirected to the Paytm Payment Gateway",
+        imageUrl: '../images/paytm.jpeg',
+        imageAlt: 'http://m.p-y.tm/pccoes_nr'
+    
+      }).then(res=>{
+        if(res)
+        window.location.href='http://m.p-y.tm/pccoes_nr'
     })
 })

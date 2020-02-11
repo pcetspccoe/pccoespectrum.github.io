@@ -21,13 +21,13 @@ swiper.on('slideChange', () => {
 
 $(".btnPush").click(()=>{
   Swal.fire({
-    title:"To register online please install our PCCOE's Spectrum 2019 App from Playstore",
-    imageUrl: '../images/swal-logo.png',
-    imageAlt: 'playstore'
+    title:"To register online visit the link and fill in the required details. You'll be redirected to the Paytm Payment Gateway",
+    imageUrl: '../images/paytm.jpeg',
+    imageAlt: 'http://m.p-y.tm/pccoes_nr'
 
   }).then(res=>{
     if(res)
-    window.location.href='https://play.google.com/store/apps/details?id=pcets.com.pccoe.spectrum'
+    window.location.href='http://m.p-y.tm/pccoes_nr'
 })
 })
 $('.home').click(()=>{

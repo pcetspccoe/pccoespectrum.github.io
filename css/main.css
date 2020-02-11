@@ -937,5 +937,5 @@ a.animated-button.victoria-one:after {
 }
 
 .event-content{
-    display: none; /* for hiding more info*/
+    /* display: none; for hiding more info */
 }
