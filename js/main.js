@@ -188,6 +188,9 @@ var x = setInterval(function () {
         document.getElementById("demo").innerHTML = "28th March, 2020";
         document.getElementById("demo-mob").innerHTML = "28th March, 2020";
     }
+
+    document.getElementById("demo").innerHTML = "The date will be communicated soon.";
+    document.getElementById("demo-mob").innerHTML = "The date will be communicated soon.";
 }, 1000);
 
 
@@ -216,4 +219,10 @@ $(".register").click(() => {
         if(res)
         window.location.href='http://m.p-y.tm/pccoes_nr'
     })
+})
+
+$(document).ready(() => {
+    Swal.fire({
+        title:"To avoid large gatherings<br> amidst the COVID-19 outbreak,<br> Spectrum 2020 has been postponed.<br><br> The date will be communicated soon."    
+      })
 })
